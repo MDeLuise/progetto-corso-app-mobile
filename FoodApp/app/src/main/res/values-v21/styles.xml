@@ -1,0 +1,48 @@
+<resources>
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item> <!-- change this value to change the settings fragment style -->
+        <item name="android:textSize">13sp</item> <!-- change this value to change the settings fragment text size -->
+        <item name="alertDialogTheme">@style/Theme.AppCompat.DayNight.Dialog.Alert</item>z
+    </style>
+
+
+    <!-- Style for an Preference Entry -->
+    <style name="AppPreference">
+        <item name="android:layout">@layout/preference_material</item>
+        <item name="android:actionMenuTextColor">#009688</item>
+    </style>
+
+
+    <!-- Style for a DialogPreference Entry -->
+    <style name="AppPreference.DialogPreference">
+        <item name="positiveButtonText">@android:string/ok</item>
+        <item name="negativeButtonText">@android:string/cancel</item>
+        <item name="android:actionMenuTextColor">#009688</item>
+    </style>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- ... other stuff ... -->
+        <item name="preferenceTheme">
+            @style/PreferenceThemeOverlay.v14.Material
+        </item>
+        <item name="alertDialogTheme">@style/AppAlertDialog</item>
+    </style><style name="AppAlertDialog"
+    parent="Theme.AppCompat.DayNight.Dialog.Alert">
+    <item name="colorAccent">@color/colorAccent</item>
+</style>
+
+    <style name="AppAlertDialogContent"
+        parent="Theme.AppCompat.DayNight">
+        <!-- To keep the color of EditText -->
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+</resources>

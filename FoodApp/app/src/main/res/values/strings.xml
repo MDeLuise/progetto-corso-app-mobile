@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">No Waste</string>
+    <string name="database_name">mydb</string>
+    <string name="selection_toolbar_message">Selezionati NUM elementi</string>
+    <string name="attention_string">Attenzione</string>
+    <string name="affermative">S\u00EC</string>
+    <string name="negative">No</string>
+    <string name="are_you_sure_to_delete">Sei sicuro di volere cancellare tutti i NUM elementi selezionati</string>
+    <string name="notify_delete_elements">NUM elementi cancellati</string>
+    <string name="modify">modifica</string>
+    <string name="modify_food">modifica cibo</string>
+    <string name="modify_fav">modifica preferito</string>
+    <string name="quantity_error">inserisci una quantit\u00E0 corretta</string>
+    <string name="price_error">inserisci un prezzo corretto</string>
+    <string name="name_error">inserisci un nome corretto</string>
+    <string name="date_error">inserisci una data corretta</string>
+    <string name="date_past_error">inserisci una data non passata</string>
+    <string name="barcode_instructions">Posiziona il codice a barre nel rettangolo per effettuare la scansione</string>
+    <string name="barcode_not_ok">Codice a barre non trovato</string>
+    <string name="barcode_ok">Codice a barre trovato</string>
+    <string name="name">nome:</string>
+    <string name="price">prezzo:</string>
+    <string name="expiration">scadenza:</string>
+    <string name="supply">quantit\u00E0:</string>
+    <string name="remove_favorite_confirm">Sei sicuro di voler rimuovere questo preferito?</string>
+    <string name="remove_food_confirm">Sei sicuro di voler rimuovere questo cibo?</string>
+    <string name="favorite_removed">Preferito rimosso</string>
+    <string name="favorite_added">Preferito aggiunto</string>
+    <string name="favorite_modified">Preferito modificato</string>
+    <string name="new_food_added">Cibo aggiunto alla lista</string>
+    <string name="modified_food">Cibo modificato</string>
+    <string name="removed_food">Cibo rimosso</string>
+    <string name="first_tab_name">SOMMARIO</string>
+    <string name="second_tab_name">PREFERITI</string>
+    <string name="third_tab_name">IMPOSTAZIONI</string>
+    <string name="cancel">Cancella</string>
+    <string name="confirm">Conferma</string>
+    <string name="warning">Avviso</string>
+    <string name="too_much_char_error">Troppe cifre... sarai mica un crash tester?</string>
+    <string name="old_foods_removed">Sono stati eliminati NUM cibi scaduti</string>
+    <string name="remove_cache">Sei sicuro di volere pulire la cache?</string>
+    <string name="cache_removed">Pulizia cache avvenuta</string>
+    <string name="default_settings">Sei sicuro di volere ripristinare le impostazioni iniziali?</string>
+    <string name="default_settings_done">Preferenze predefinite impostate</string>
+    <string name="erase_all">Sei sicuro di volere cancellare tutti i dati? L\'operazione \u00E8 irreversibile.</string>
+    <string name="erase_all_done">Dati cancellati</string>
+    <string name="notification_title">Cibi in scadenza</string>
+    <string name="notification_message">Hai NUM cibi in scadenza entro DAYS giorni!"</string>
+    <string name="add_also_to_fav">aggiungi anche ai preferiti:</string>
+    <string name="select_category">seleziona la categoria:</string>
+    <string name="add_food">Aggiungi cibo</string>
+    <string name="add_fav">Aggiungi preferito</string>
+
+    <string-array name="currency_list_entries">
+        <item>Euro</item>
+        <item>Dollaro</item>
+    </string-array>
+
+    <string-array name="currency_list_values">
+        <item>€</item>
+        <item>$</item>
+    </string-array>
+</resources>

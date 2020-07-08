@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/searchButton"
+        android:title="search"
+        android:icon="@drawable/new_search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+
+    <item
+        android:id="@+id/sortButton"
+        android:icon="@drawable/new_sort"
+        android:title="sort"
+        app:showAsAction="ifRoom"/>
+
+</menu>

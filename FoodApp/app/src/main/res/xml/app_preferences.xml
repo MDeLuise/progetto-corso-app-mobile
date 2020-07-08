@@ -1,0 +1,82 @@
+<android.support.v7.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.preference.PreferenceCategory
+        android:title="Generali">
+
+        <ListPreference
+            android:key="currency"
+            android:title="Valuta utilizzata"
+            android:summary="Seleziona la valuta da usare nell'applicazione"
+            android:entries="@array/currency_list_entries"
+            android:entryValues="@array/currency_list_values"
+            android:dialogTitle="Seleziona la valuta utilizzata" />
+
+        <android.support.v7.preference.CheckBoxPreference
+            android:key="oldFoodInserted"
+            android:title="Inserimento cibo scaduto"
+            android:summary="Se selezionato permette di inserire cibo già scaduto nella lista"
+            android:defaultValue="false"/>
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:key="removeOldFoodSwitch"
+            android:title="Elimina cibi scaduti"
+            android:summary="Elimina automaticamente dalla lista i cibi scaduti"
+            android:defaultValue="false" />
+
+        <android.support.v7.preference.EditTextPreference
+            android:key="RemoveOldDays"
+            android:title="Rimuovi cibi scaduti da giorni"
+            android:summary="Seleziona quanti giorni dopo la scadenza un cibo viene rimosso dalla lista"
+            android:defaultValue="7"
+            android:dialogLayout="@layout/pref_dialog_edittext_fix" />
+
+        <android.support.v7.preference.CheckBoxPreference
+            android:key="notificationAboutAutoRemoveFood"
+            android:title="Avviso cancellazione automatica"
+            android:summary="Avvisami quando un cibo e' stato rimosso perche' scaduto"
+            android:defaultValue="false"/>
+
+    </android.support.v7.preference.PreferenceCategory>
+
+    <android.support.v7.preference.PreferenceCategory
+        android:title="Notifiche scadenza"
+        android:key="notificationCategory">
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:key="notificationSwitch"
+            android:title="Notifiche cibi in scadenza"
+            android:summary="Ricevi notifiche quando un cibo sta per scadere"
+            android:defaultValue="true" />
+
+        <android.support.v7.preference.EditTextPreference
+            android:key="notificationDays"
+            android:title="Giorni anticipo notifiche"
+            android:summary="Seleziona quanti giorni prima vuoi ricevere la notifica di scadenza dei cibi"
+            android:defaultValue="1"
+            android:dialogLayout="@layout/pref_dialog_edittext_fix" />
+
+        <com.example.foo.foodapp.TimePreference
+            android:key="timePicker"
+            android:title="Orario notifiche"
+            android:summary="Seleziona un orario di ricezione notifiche cibi in scadenza"
+            android:defaultValue="540"
+            style="@style/AppPreference.DialogPreference" />
+
+    </android.support.v7.preference.PreferenceCategory>
+
+    <android.support.v7.preference.PreferenceCategory
+        android:title="Ripristino" >
+
+        <Preference android:title="Pulisci cache"
+            android:key="cacheButton"/>
+
+        <Preference android:title="Ripristina impostazioni iniziali"
+            android:key="defaultSettingsButton"/>
+
+        <Preference android:title="Rimuovi tutti i dati dell'applicazione"
+            android:key="defaultButton"/>
+
+    </android.support.v7.preference.PreferenceCategory>
+
+</android.support.v7.preference.PreferenceScreen>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#125688</color>
+    <color name="colorPrimaryDark">#125688</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#c8e8ff</color>
+    <color name="colorSecondary">#009688</color>
+
+    <color name="dialog_cancel_bgcolor">#FF4444</color>
+    <color name="dialog_ok_bgcolor">#0099cc</color>
+    <color name="dialog_text_color">#000000</color>
+
+    <color name="selectedCard">#80deea</color>
+    <color name="notSelectedCard">#FFFFFF</color>
+</resources>
